@@ -1,0 +1,2 @@
+#add node modules to ignore list
+node_modules
