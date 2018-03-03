@@ -7,10 +7,8 @@ If you can, try writing it in only one line of code.*/
 
 class Multiples {
   findMultiples(integer, limit) {
-    this.integer = integer;
-    this.limit = limit;
     var outputArr = [];
-    for (var count = this.integer; count <= this.limit; count += this.integer) {
+    for (var count = integer; count <= limit; count += integer) {
       outputArr.push(count);
     }
     return outputArr;
