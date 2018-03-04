@@ -6,17 +6,16 @@ If the whole array is consecutive then return null
 
 The array will always have at least 2 elements and all the elements will be numbers. The numbers will also all be unique and in ascending order. The numbers could be positive or negative and the first non-consecutive could be either too! */
 class NonConsecutive {
-  findFirstNonConsecutiveNumber(inputArray) {
-    for (var i = 0; i < inputArray.length; i++) {
-      if (Math.abs(inputArray[i]) + 1 !== Math.abs(inputArray[i + 1])) {
-        if (inputArray[i + 1] === undefined) {
+  findFirstNonConsecutiveNumber(arr) {
+    for (var i = 0; i < arr.length; i++) {
+      if (arr[i] + 1 !== arr[i + 1]) {
+        if (arr[i + 1] === undefined) {
           return null;
         } else {
-          return inputArray[i];
+          return arr[i + 1];
         }
       }
     }
   }
 }
-
 module.exports = NonConsecutive;

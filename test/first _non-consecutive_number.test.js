@@ -6,14 +6,14 @@ describe("Non consecutive", () => {
     var inputArr = [1, 2, 3, 4, 6, 7, 8];
     var output = nonCensecutive.findFirstNonConsecutiveNumber(inputArr);
 
-    expect(output).toEqual(4);
+    expect(output).toEqual(6);
 
-    var inputArr2 = [0, -1, -2, -3, -5, -6];
+    var inputArr2 = [-9, -8, -7, -5, -4, -3, -2, -1, 0];
     var output = nonCensecutive.findFirstNonConsecutiveNumber(inputArr2);
 
-    expect(output).toEqual(-3);
+    expect(output).toEqual(-5);
 
-    var inputArr3 = [-2, -3];
+    var inputArr3 = [-3, -2];
     var output = nonCensecutive.findFirstNonConsecutiveNumber(inputArr3);
 
     expect(output).toEqual(null);
